@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Prototype</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f1115;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: #1f2937;
+            color: #60a5fa;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #a1a1aa;
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .video-section {
+            background: #181b21;
+            border: 1px solid #292d35;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 35px;
+        }
+
+        .video-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #181b21;
+            border: 1px solid #292d35;
+            border-radius: 14px;
+            padding: 25px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #a1a1aa;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        footer {
+            text-align: center;
+            color: #71717a;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Project Header -->
+        <header>
+            <span class="badge">Prototype Demonstration</span>
+
+            <h1>Your Project Name</h1>
+
+            <p class="subtitle">
+                A brief description of your project and the problem
+                your solution aims to solve.
+            </p>
+        </header>
+
+
+        <!-- YouTube Video -->
+        <section class="video-section">
+
+            <h2>🎥 Prototype Demo</h2>
+
+            <div class="video-container">
+
+                <!--
+                    TEMPORARY YOUTUBE VIDEO
+
+                    Later, replace ONLY the video ID below.
+
+                    Example:
+                    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+                    becomes:
+                    https://www.youtube.com/embed/dQw4w9WgXcQ
+                -->
+
+                <iframe
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="Project Prototype Demonstration"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <!-- Project Information -->
+        <section class="info-grid">
+
+            <div class="card">
+                <h3>💡 Problem</h3>
+                <p>
+                    Briefly explain the real-world problem your project
+                    is trying to solve.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Solution</h3>
+                <p>
+                    Briefly explain how your proposed solution addresses
+                    the problem.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>⚙️ Technology</h3>
+                <p>
+                    Mention the major technologies, frameworks,
+                    platforms and AI/ML components used.
+                </p>
+            </div>
+
+        </section>
+
+
+        <footer>
+            © 2026 Your Team Name · Prototype Demonstration
+        </footer>
+
+    </main>
+
+</body>
+</html>
